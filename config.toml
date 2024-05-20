@@ -1,0 +1,39 @@
+languageCode = 'en-us'
+
+[module]
+[[module.imports]]
+  path = 'github.com/LordMathis/hugo-theme-nightfall'
+
+[params]
+hostname = "renanbastos.dev"
+sitedescription = 'Renan Bastos has been working as a Software Engineer for over 9 years with cutting-edge technologies'
+showMetadata = false
+
+  [params.author]
+    name = "Renan Bastos"
+    email = "renanbastos.tec@gmail.com"
+    description = "Go, Python, k8s, AWS, GCP"
+
+
+[menu]
+  [[menu.header]]
+    name = "about"
+    weight = 0
+    url = "/about"
+  [[menu.header]]
+    name = "posts"
+    weight = 0
+    url = "/posts"
+
+
+[[params.social]]
+key = 0
+name = "github"
+url = "https://github.com/renanbastos93"
+target = "_blank"
+
+[[params.social]]
+key = 1
+name = "linkedin"
+url = "https://www.linkedin.com/in/renanbastos93"
+target = "_blank"

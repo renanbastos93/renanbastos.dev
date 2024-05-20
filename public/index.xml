@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <link>//localhost:1313/</link>
+    <description>Recent content on </description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <managingEditor>renanbastos.tec@gmail.com (Renan Bastos)</managingEditor>
+    <webMaster>renanbastos.tec@gmail.com (Renan Bastos)</webMaster>
+    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>//localhost:1313/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>renanbastos.tec@gmail.com (Renan Bastos)</author>
+      <guid>//localhost:1313/about/</guid>
+      <description>I have a deep passion for technology, innovation, and entrepreneurship, and I am constantly driven to expand my knowledge and skills. With over 7 years of experience as a Software Engineer, I have a strong track record in developing software and web systems to the highest standards. Throughout my career, I have collaborated with diverse stakeholders from both technical and non-technical backgrounds, ensuring clear communication, maintaining a focus on quality, and facilitating continuous delivery.</description>
+    </item>
+    <item>
+      <title>Posts</title>
+      <link>//localhost:1313/posts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>renanbastos.tec@gmail.com (Renan Bastos)</author>
+      <guid>//localhost:1313/posts/</guid>
+      <description>English Boneless: a CLI to create your apps with Go How to verify if the context has a deadline Do we must implements unit test just to have coverage? Using redirect middleware with GoFiber Portuguese Criando meu pacote de erro usando Go Como verificar se o contexto tem um prazo para finalizar em Golang Como Fazer Restore do MongoDB usando mongorestore com Arquivos wiredTriger Qual a diferença de usar um receiver com ou sem ponteiro em Go?</description>
+    </item>
+  </channel>
+</rss>
