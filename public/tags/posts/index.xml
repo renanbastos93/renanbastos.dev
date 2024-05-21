@@ -14,7 +14,7 @@
       <link>//localhost:1313/posts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>renanbastos.tec@gmail.com (Renan Bastos)</author>
       <guid>//localhost:1313/posts/</guid>
-      <description>English Boneless: a CLI to create your apps with Go How to verify if the context has a deadline Do we must implements unit test just to have coverage? Using redirect middleware with GoFiber Portuguese Criando meu pacote de erro usando Go Como verificar se o contexto tem um prazo para finalizar em Golang Como Fazer Restore do MongoDB usando mongorestore com Arquivos wiredTriger Qual a diferença de usar um receiver com ou sem ponteiro em Go?</description>
+      <description>title: aaa English Boneless: a CLI to create your apps with Go How to verify if the context has a deadline Do we must implements unit test just to have coverage? Using redirect middleware with GoFiber Portuguese Criando meu pacote de erro usando Go Como verificar se o contexto tem um prazo para finalizar em Golang Como Fazer Restore do MongoDB usando mongorestore com Arquivos wiredTriger Qual a diferença de usar um receiver com ou sem ponteiro em Go?</description>
     </item>
   </channel>
 </rss>
