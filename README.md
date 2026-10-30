@@ -10,11 +10,8 @@ Next.js (App Router, static export) + Tailwind CSS. No backend.
 pnpm install
 pnpm dev          # http://localhost:3000
 pnpm typecheck
-pnpm build        # static site in ./out
-pnpm start        # serve ./out over HTTP
+pnpm build && pnpm start
 ```
-
-Open `./out` through a server (`pnpm start`, nginx). Opening `out/index.html` straight from disk (`file://`) loads no JavaScript, so the language switch and the article filter do nothing.
 
 ## Content
 
@@ -23,9 +20,4 @@ Open `./out` through a server (`pnpm start`, nginx). Opening `out/index.html` st
 
 ## Deploy (Dokploy)
 
-Create an application with build type **Dockerfile**. The image builds the static export and serves it with nginx on port 80 (`nginx.conf`), which also redirects the old Hugo URLs (`/about`, `/posts`, `/blog`, ...) to the matching section.
-
-```bash
-docker build -t renanbastos.dev .
-docker run --rm -p 8080:80 renanbastos.dev
-```
+Create an application with build type **Railpack** (`railpack.json` pins the Node provider). Railpack runs `pnpm build` and `pnpm start`, so the app listens on port 3000. Old Hugo URLs (`/about`, `/posts`, `/blog`, ...) redirect to the matching section via `redirects()` in `next.config.ts`.
