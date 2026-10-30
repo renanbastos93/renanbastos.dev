@@ -7,10 +7,10 @@ Next.js (App Router, static export) + Tailwind CSS. No backend.
 ## Develop
 
 ```bash
-pnpm install
-pnpm dev          # http://localhost:3000
-pnpm typecheck
-pnpm build && pnpm start
+npm install
+npm run dev         # http://localhost:3000
+npm run typecheck
+npm run build && npm start
 ```
 
 ## Content
@@ -20,4 +20,4 @@ pnpm build && pnpm start
 
 ## Deploy (Dokploy)
 
-Create an application with build type **Railpack** (`railpack.json` pins the Node provider). Railpack runs `pnpm build` and `pnpm start`, so the app listens on port 3000. Old Hugo URLs (`/about`, `/posts`, `/blog`, ...) redirect to the matching section via `redirects()` in `next.config.ts`.
+Create an application with build type **Railpack** (`railpack.json` pins the Node provider). Railpack runs `npm run build` and `npm start`, so the app listens on port 3000. Old Hugo URLs (`/about`, `/posts`, `/blog`, ...) redirect to the matching section via `redirects()` in `next.config.ts`.
