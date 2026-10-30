@@ -20,4 +20,4 @@ npm run build && npm start
 
 ## Deploy (Dokploy)
 
-Create an application with build type **Railpack** (`railpack.json` pins the Node provider). Railpack runs `npm run build` and `npm start`, so the app listens on port 3000. Old Hugo URLs (`/about`, `/posts`, `/blog`, ...) redirect to the matching section via `redirects()` in `next.config.ts`.
+Create an application with build type **Railpack** (`railpack.json` pins the Node provider). Railpack runs `npm run build` and `npm start`, so the app listens on the `PORT` env var (default 3000). Set `PORT=3007` in the app environment and use the same container port. Old Hugo URLs (`/about`, `/posts`, `/blog`, ...) redirect to the matching section via `redirects()` in `next.config.ts`.
