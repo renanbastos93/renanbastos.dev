@@ -17,7 +17,7 @@ const en = {
   meta: {
     title: "Renan Bastos · Software Engineer",
     description:
-      "Renan Bastos builds backend systems, APIs and AI agents with Go, and offers consulting and forward deployed engineering (FDE). 10+ years of experience, open source contributions and articles.",
+      "Renan Bastos builds backend systems, APIs and AI agents with Go, and offers consulting and forward deployed engineering (FDE). 12+ years of experience, open source contributions and articles.",
   },
   skipLink: "Skip to content",
   nav: {
