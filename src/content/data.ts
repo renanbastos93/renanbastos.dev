@@ -13,7 +13,7 @@ export const profile = {
 
 /** Snapshot figures. Update when refreshing the content. */
 export const stats = {
-  years: "10+",
+  years: "12+",
   npmMonthlyDownloads: { en: "1.4M", pt: "1,4 mi", es: "1,4 M" } as Localized,
 };
 

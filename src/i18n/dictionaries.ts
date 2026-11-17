@@ -17,7 +17,7 @@ const en = {
   meta: {
     title: "Renan Bastos · Software Engineer",
     description:
-      "Renan Bastos builds backend systems, APIs and AI agents with Go, and offers consulting and forward deployed engineering (FDE). 10+ years of experience, open source contributions and articles.",
+      "Renan Bastos builds backend systems, APIs and AI agents with Go, and offers consulting and forward deployed engineering (FDE). 12+ years of experience, open source contributions and articles.",
   },
   skipLink: "Skip to content",
   nav: {
@@ -37,7 +37,7 @@ const en = {
   hero: {
     eyebrow: "Software engineer & consultant · Florianópolis, Brazil",
     title: "I build backend systems that stay simple as they grow.",
-    lead: "10+ years shipping software, from Go services, APIs and integrations to AI agents. Through my consultancy I also work inside companies as a forward deployed engineer, taking AI and integrations into production.",
+    lead: "12+ years shipping software, from Go services, APIs and integrations to AI agents. Through my consultancy I also work inside companies as a forward deployed engineer, taking AI and integrations into production.",
     ctaPrimary: "Message me on LinkedIn",
     ctaSecondary: "See my work",
   },
@@ -162,7 +162,7 @@ const pt: Dictionary = {
   meta: {
     title: "Renan Bastos · Engenheiro de software",
     description:
-      "Renan Bastos constrói sistemas backend, APIs e agentes de IA com Go, e oferece consultoria e forward deployed engineering (FDE). Mais de 10 anos de experiência, contribuições open source e artigos.",
+      "Renan Bastos constrói sistemas backend, APIs e agentes de IA com Go, e oferece consultoria e forward deployed engineering (FDE). Mais de 12 anos de experiência, contribuições open source e artigos.",
   },
   skipLink: "Pular para o conteúdo",
   nav: {
@@ -182,7 +182,7 @@ const pt: Dictionary = {
   hero: {
     eyebrow: "Engenheiro de software e consultor · Florianópolis, Brasil",
     title: "Construo sistemas backend que continuam simples enquanto crescem.",
-    lead: "Mais de 10 anos entregando software, de serviços em Go, APIs e integrações a agentes de IA. Pela minha consultoria também atuo dentro das empresas como forward deployed engineer, levando IA e integrações para produção.",
+    lead: "Mais de 12 anos entregando software, de serviços em Go, APIs e integrações a agentes de IA. Pela minha consultoria também atuo dentro das empresas como forward deployed engineer, levando IA e integrações para produção.",
     ctaPrimary: "Falar comigo no LinkedIn",
     ctaSecondary: "Ver meu trabalho",
   },
@@ -305,7 +305,7 @@ const es: Dictionary = {
   meta: {
     title: "Renan Bastos · Ingeniero de software",
     description:
-      "Renan Bastos construye sistemas backend, APIs y agentes de IA con Go, y ofrece consultoría y forward deployed engineering (FDE). Más de 10 años de experiencia, contribuciones open source y artículos.",
+      "Renan Bastos construye sistemas backend, APIs y agentes de IA con Go, y ofrece consultoría y forward deployed engineering (FDE). Más de 12 años de experiencia, contribuciones open source y artículos.",
   },
   skipLink: "Saltar al contenido",
   nav: {
@@ -325,7 +325,7 @@ const es: Dictionary = {
   hero: {
     eyebrow: "Ingeniero de software y consultor · Florianópolis, Brasil",
     title: "Construyo sistemas backend que siguen siendo simples mientras crecen.",
-    lead: "Más de 10 años creando software, de servicios en Go, APIs e integraciones a agentes de IA. Con mi consultora también trabajo dentro de las empresas como forward deployed engineer, llevando IA e integraciones a producción.",
+    lead: "Más de 12 años creando software, de servicios en Go, APIs e integraciones a agentes de IA. Con mi consultora también trabajo dentro de las empresas como forward deployed engineer, llevando IA e integraciones a producción.",
     ctaPrimary: "Escríbeme en LinkedIn",
     ctaSecondary: "Ver mi trabajo",
   },
