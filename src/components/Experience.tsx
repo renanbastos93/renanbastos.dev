@@ -11,7 +11,7 @@ export function Experience() {
     `${formatMonth(start, locale)} – ${end ? formatMonth(end, locale) : t.experience.present}`;
 
   return (
-    <Section id="experience" index="02" title={t.experience.title} intro={t.experience.intro}>
+    <Section id="experience" index="03" title={t.experience.title} intro={t.experience.intro}>
       <ol className="relative space-y-10 border-l border-line pl-6 sm:pl-8">
         {experience.map((job) => (
           <li key={job.company} className="relative">
