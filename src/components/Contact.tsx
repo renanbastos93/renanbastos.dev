@@ -10,7 +10,7 @@ export function Contact() {
     <section id="contact" aria-labelledby="contact-title" className="border-t border-line py-16 sm:py-24">
       <div className="on-accent rounded-3xl bg-accent px-6 py-12 text-accent-ink sm:px-12 sm:py-16">
         <p className="font-mono text-sm opacity-80" aria-hidden="true">
-          07
+          08
         </p>
         <h2 id="contact-title" className="mt-2 font-display text-4xl font-semibold tracking-tight sm:text-5xl">
           {t.contact.title}
