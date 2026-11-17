@@ -1,15 +1,15 @@
 "use client";
 
-import { articles, mergedPullRequests, profile, stats } from "@/content/data";
+import { mergedPullRequests, profile, stats } from "@/content/data";
 import { useLocale } from "@/i18n/LocaleProvider";
 import { ExternalLink } from "./ExternalLink";
 
-export function Hero() {
+export function Hero({ articleCount }: { articleCount: number }) {
   const { t, l } = useLocale();
   const figures = [
     { value: stats.years, label: t.stats.years },
     { value: l(stats.npmMonthlyDownloads), label: t.stats.downloads },
-    { value: String(articles.length), label: t.stats.articles },
+    { value: String(articleCount), label: t.stats.articles },
     { value: String(mergedPullRequests), label: t.stats.prs },
   ];
 
@@ -48,7 +48,7 @@ export function Hero() {
           <p>
             <span className="text-accent">$</span> go run ./renan
           </p>
-          <p className="mt-2 text-muted">→ backend · distributed systems · ai agents</p>
+          <p className="mt-2 text-muted">→ backend · distributed systems · ai agents · devsecops</p>
           <p className="text-muted">→ consulting · forward deployed engineering</p>
           <p className="text-muted">→ go · postgres · kafka · kubernetes · aws · gcp</p>
           <p className="text-muted">→ florianópolis, br · surf · bike · trail</p>

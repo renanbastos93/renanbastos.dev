@@ -74,13 +74,18 @@ export const experience: Job[] = [
   {
     company: "Renan Bastos Desenvolvimento",
     location: "Florianópolis, SC",
-    roles: [{ title: same("Co-Founder"), start: "2020-09" }],
+    roles: [
+      {
+        title: { en: "Founder & Consultant", pt: "Fundador e consultor", es: "Fundador y consultor" },
+        start: "2020-09",
+      },
+    ],
     summary: {
-      en: "Software consulting: building software for clients and managing their cloud servers on AWS, GCP and DigitalOcean.",
-      pt: "Consultoria de software: projetos complexos para empresas clientes e servidores em nuvem gerenciados na AWS, GCP e DigitalOcean.",
-      es: "Consultoría de software: proyectos complejos para empresas clientes y servidores en la nube gestionados en AWS, GCP y DigitalOcean.",
+      en: "Software consulting and forward deployed engineering: working inside client teams to take AI agents, automations and integrations from prototype to production, plus Go backends, architecture reviews and cloud infrastructure on AWS, GCP and DigitalOcean.",
+      pt: "Consultoria de software e forward deployed engineering: trabalho dentro dos times dos clientes para levar agentes de IA, automações e integrações do protótipo à produção, além de backend em Go, revisão de arquitetura e infraestrutura em nuvem na AWS, GCP e DigitalOcean.",
+      es: "Consultoría de software y forward deployed engineering: trabajo dentro de los equipos de los clientes para llevar agentes de IA, automatizaciones e integraciones del prototipo a producción, además de backend en Go, revisión de arquitectura e infraestructura en la nube en AWS, GCP y DigitalOcean.",
     },
-    stack: ["AWS", "GCP", "DigitalOcean"],
+    stack: ["AI agents", "Go", "AWS", "GCP", "DigitalOcean"],
   },
   {
     company: "Azion Technologies",
@@ -331,6 +336,10 @@ export const contributions: Contribution[] = [
 export type ArticleLang = "pt" | "en";
 export type Article = { title: string; href: string; date: string; lang: ArticleLang; source: "dev.to" | "Medium" };
 
+/**
+ * Medium posts, plus a snapshot of the dev.to posts. New dev.to posts show up on their own
+ * (see articles.ts); this list is the fallback when the dev.to API is unreachable.
+ */
 export const articles: Article[] = [
   { title: "The Rise of Solution Architects in the Age of Artificial Intelligence", href: "https://dev.to/renanbastos93/the-rise-of-solution-architects-in-the-age-of-artificial-intelligence-824", date: "2026-04-24", lang: "en", source: "dev.to" },
   { title: "Seu app Go no K8s está usando até 20x mais CPU do que deveria (e como corrigir do jeito certo)", href: "https://dev.to/renanbastos93/seu-app-go-no-k8s-esta-usando-ate-20x-mais-cpu-do-que-deveria-e-como-corrigir-do-jeito-certo-3g15", date: "2026-02-27", lang: "pt", source: "dev.to" },

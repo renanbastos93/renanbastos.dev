@@ -15,7 +15,7 @@ export type Localized = Record<Locale, string>;
 
 const en = {
   meta: {
-    title: "Renan Bastos · Software Engineer",
+    title: "Renan Bastos · Software Engineer & Consultant",
     description:
       "Renan Bastos builds backend systems, APIs and AI agents with Go, and offers consulting and forward deployed engineering (FDE). 12+ years of experience, open source contributions and articles.",
   },
@@ -51,8 +51,9 @@ const en = {
   about: {
     title: "About",
     paragraphs: [
-      "I'm a backend engineer. Most of my work is in Go: system architecture, cloud infrastructure, databases, observability and automation. I've built CRM integrations, real estate lead management, WhatsApp automation, AI agents, data pipelines and the internal tools that keep operations running.",
-      "I like working close to product and business teams, turning complex problems into simple, reliable software. Lately most of my time goes into AI agents and the products I'm building on my own.",
+      "I'm a software engineer and consultant. Most of my work is in Go: system architecture, cloud infrastructure, databases, observability and automation. I've built CRM integrations, real estate lead management, WhatsApp automation, AI agents, data pipelines and the internal tools that keep operations running.",
+      "I like working close to product and business teams, turning complex problems into simple, reliable software. I've been the technical reference for several teams, helping shape architecture decisions and weighing trade-offs with technical and non-technical people alike.",
+      "What drives me is where engineering, AI and entrepreneurship meet: I run my own consultancy and build my own products, like Conteúdo de Vitrine. I also keep a homelab where I practice infrastructure and security, and I bring that security mindset to every project.",
     ],
     outside: "Away from the keyboard: surfing, biking, hiking and video games.",
   },
@@ -83,9 +84,9 @@ const en = {
         stack: ["Go", "REST", "gRPC", "Kafka"],
       },
       {
-        title: "Architecture and cloud",
-        body: "Architecture reviews, performance and cost tuning, and cloud infrastructure on AWS, GCP and Kubernetes.",
-        stack: ["AWS", "GCP", "Kubernetes", "Postgres"],
+        title: "Architecture, cloud and security",
+        body: "Architecture reviews, performance and cost tuning, cloud infrastructure on AWS, GCP and Kubernetes, and security built into the delivery pipeline.",
+        stack: ["AWS", "GCP", "Kubernetes", "DevSecOps"],
       },
     ],
     process: {
@@ -160,7 +161,7 @@ export type Dictionary = typeof en;
 
 const pt: Dictionary = {
   meta: {
-    title: "Renan Bastos · Engenheiro de software",
+    title: "Renan Bastos · Engenheiro de software e consultor",
     description:
       "Renan Bastos constrói sistemas backend, APIs e agentes de IA com Go, e oferece consultoria e forward deployed engineering (FDE). Mais de 12 anos de experiência, contribuições open source e artigos.",
   },
@@ -196,8 +197,9 @@ const pt: Dictionary = {
   about: {
     title: "Sobre",
     paragraphs: [
-      "Sou engenheiro backend. A maior parte do meu trabalho é em Go: arquitetura de sistemas, infraestrutura em nuvem, bancos de dados, observabilidade e automação. Já construí integrações com CRM, gestão de leads imobiliários, automação de WhatsApp, agentes de IA, pipelines de dados e as ferramentas internas que mantêm a operação de pé.",
-      "Gosto de trabalhar perto de produto e de negócio, transformando problemas complexos em software simples e confiável. Hoje passo a maior parte do tempo com agentes de IA e com os produtos que estou construindo por conta própria.",
+      "Sou engenheiro de software e consultor. A maior parte do meu trabalho é em Go: arquitetura de sistemas, infraestrutura em nuvem, bancos de dados, observabilidade e automação. Já construí integrações com CRM, gestão de leads imobiliários, automação de WhatsApp, agentes de IA, pipelines de dados e as ferramentas internas que mantêm a operação de pé.",
+      "Gosto de trabalhar perto de produto e de negócio, transformando problemas complexos em software simples e confiável. Já fui referência técnica para vários times, ajudando nas decisões de arquitetura e avaliando trade-offs com pessoas técnicas e não técnicas.",
+      "O que me move é o encontro entre engenharia, IA e empreendedorismo: tenho minha própria consultoria e construo meus próprios produtos, como o Conteúdo de Vitrine. Também mantenho um homelab onde pratico infraestrutura e segurança, e levo esse cuidado com segurança para todo projeto.",
     ],
     outside: "Longe do teclado: surfe, bike, trilha e videogame.",
   },
@@ -228,9 +230,9 @@ const pt: Dictionary = {
         stack: ["Go", "REST", "gRPC", "Kafka"],
       },
       {
-        title: "Arquitetura e nuvem",
-        body: "Revisão de arquitetura, ajuste de performance e de custo, e infraestrutura em nuvem na AWS, no GCP e em Kubernetes.",
-        stack: ["AWS", "GCP", "Kubernetes", "Postgres"],
+        title: "Arquitetura, nuvem e segurança",
+        body: "Revisão de arquitetura, ajuste de performance e de custo, infraestrutura em nuvem na AWS, no GCP e em Kubernetes, e segurança desde o pipeline de entrega.",
+        stack: ["AWS", "GCP", "Kubernetes", "DevSecOps"],
       },
     ],
     process: {
@@ -303,7 +305,7 @@ const pt: Dictionary = {
 
 const es: Dictionary = {
   meta: {
-    title: "Renan Bastos · Ingeniero de software",
+    title: "Renan Bastos · Ingeniero de software y consultor",
     description:
       "Renan Bastos construye sistemas backend, APIs y agentes de IA con Go, y ofrece consultoría y forward deployed engineering (FDE). Más de 12 años de experiencia, contribuciones open source y artículos.",
   },
@@ -339,8 +341,9 @@ const es: Dictionary = {
   about: {
     title: "Sobre mí",
     paragraphs: [
-      "Soy ingeniero backend. La mayor parte de mi trabajo es en Go: arquitectura de sistemas, infraestructura en la nube, bases de datos, observabilidad y automatización. He construido integraciones con CRM, gestión de leads inmobiliarios, automatización de WhatsApp, agentes de IA, pipelines de datos y las herramientas internas que mantienen la operación en marcha.",
-      "Me gusta trabajar cerca del producto y del negocio, convirtiendo problemas complejos en software simple y confiable. Hoy paso la mayor parte del tiempo con agentes de IA y con los productos que construyo por mi cuenta.",
+      "Soy ingeniero de software y consultor. La mayor parte de mi trabajo es en Go: arquitectura de sistemas, infraestructura en la nube, bases de datos, observabilidad y automatización. He construido integraciones con CRM, gestión de leads inmobiliarios, automatización de WhatsApp, agentes de IA, pipelines de datos y las herramientas internas que mantienen la operación en marcha.",
+      "Me gusta trabajar cerca del producto y del negocio, convirtiendo problemas complejos en software simple y confiable. He sido referente técnico de varios equipos, ayudando en las decisiones de arquitectura y evaluando trade-offs con personas técnicas y no técnicas.",
+      "Lo que me mueve es el encuentro entre ingeniería, IA y emprendimiento: tengo mi propia consultora y construyo mis propios productos, como Conteúdo de Vitrine. También mantengo un homelab donde practico infraestructura y seguridad, y llevo ese cuidado por la seguridad a cada proyecto.",
     ],
     outside: "Lejos del teclado: surf, bici, senderismo y videojuegos.",
   },
@@ -371,9 +374,9 @@ const es: Dictionary = {
         stack: ["Go", "REST", "gRPC", "Kafka"],
       },
       {
-        title: "Arquitectura y nube",
-        body: "Revisión de arquitectura, ajuste de rendimiento y de costos, e infraestructura en la nube en AWS, GCP y Kubernetes.",
-        stack: ["AWS", "GCP", "Kubernetes", "Postgres"],
+        title: "Arquitectura, nube y seguridad",
+        body: "Revisión de arquitectura, ajuste de rendimiento y de costos, infraestructura en la nube en AWS, GCP y Kubernetes, y seguridad desde el pipeline de entrega.",
+        stack: ["AWS", "GCP", "Kubernetes", "DevSecOps"],
       },
     ],
     process: {
