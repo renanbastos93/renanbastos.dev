@@ -3,12 +3,13 @@
 import { useLocale } from "@/i18n/LocaleProvider";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 
-export const sectionIds = ["about", "experience", "projects", "open-source", "writing", "contact"] as const;
+export const sectionIds = ["about", "services", "experience", "projects", "open-source", "writing", "contact"] as const;
 
 export function Header() {
   const { t } = useLocale();
   const labels: Record<(typeof sectionIds)[number], string> = {
     about: t.nav.about,
+    services: t.nav.services,
     experience: t.nav.experience,
     projects: t.nav.projects,
     "open-source": t.nav.openSource,

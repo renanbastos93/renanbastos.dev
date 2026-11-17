@@ -24,7 +24,7 @@ export default function OpengraphImage() {
       <div style={{ display: "flex", flexDirection: "column" }}>
         <div style={{ fontSize: 84, fontWeight: 700, lineHeight: 1.05 }}>Renan Bastos</div>
         <div style={{ fontSize: 40, marginTop: 24, color: "#9ba5b3" }}>
-          Backend · Go · AI agents · 10+ years
+          Backend · Go · AI agents · FDE consulting
         </div>
       </div>
       <div style={{ fontSize: 28, color: "#5fcbe8" }}>$ go run ./renan ▍</div>

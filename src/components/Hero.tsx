@@ -49,6 +49,7 @@ export function Hero() {
             <span className="text-accent">$</span> go run ./renan
           </p>
           <p className="mt-2 text-muted">→ backend · distributed systems · ai agents</p>
+          <p className="text-muted">→ consulting · forward deployed engineering</p>
           <p className="text-muted">→ go · postgres · kafka · kubernetes · aws · gcp</p>
           <p className="text-muted">→ florianópolis, br · surf · bike · trail</p>
           <p className="mt-2">

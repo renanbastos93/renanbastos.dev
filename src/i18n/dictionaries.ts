@@ -17,12 +17,13 @@ const en = {
   meta: {
     title: "Renan Bastos · Software Engineer",
     description:
-      "Renan Bastos builds backend systems, APIs and AI agents with Go. 10+ years of experience, open source contributions and articles.",
+      "Renan Bastos builds backend systems, APIs and AI agents with Go, and offers consulting and forward deployed engineering (FDE). 12+ years of experience, open source contributions and articles.",
   },
   skipLink: "Skip to content",
   nav: {
     label: "Sections",
     about: "About",
+    services: "Services",
     experience: "Experience",
     projects: "Projects",
     openSource: "Open source",
@@ -34,9 +35,9 @@ const en = {
     names: { en: "English", pt: "Português", es: "Español" } as Localized,
   },
   hero: {
-    eyebrow: "Software engineer · Florianópolis, Brazil",
+    eyebrow: "Software engineer & consultant · Florianópolis, Brazil",
     title: "I build backend systems that stay simple as they grow.",
-    lead: "10+ years shipping software, from Go services, APIs and integrations to AI agents, and giving back to the open source tools I rely on.",
+    lead: "12+ years shipping software, from Go services, APIs and integrations to AI agents. Through my consultancy I also work inside companies as a forward deployed engineer, taking AI and integrations into production.",
     ctaPrimary: "Message me on LinkedIn",
     ctaSecondary: "See my work",
   },
@@ -54,6 +55,49 @@ const en = {
       "I like working close to product and business teams, turning complex problems into simple, reliable software. Lately most of my time goes into AI agents and the products I'm building on my own.",
     ],
     outside: "Away from the keyboard: surfing, biking, hiking and video games.",
+  },
+  services: {
+    title: "Services",
+    intro:
+      "Consulting through Renan Bastos Desenvolvimento, my company since 2020. I work hands-on, writing the code with your team, not just advising.",
+    featured: {
+      badge: "Forward Deployed Engineering · FDE",
+      title: "An engineer inside your operation",
+      body: "I join your team, learn how the business actually runs and ship AI and integrations in your real environment, with your data and your systems, until they are in production and in use.",
+      points: [
+        "Discovery with the people who run the process every day",
+        "AI agents and automations built on your data and tools",
+        "Integrations with your CRM, ERP, WhatsApp and internal APIs",
+        "Production setup, monitoring and handover to your team",
+      ],
+    },
+    offers: [
+      {
+        title: "AI agents and automation",
+        body: "Agents that qualify leads, answer customers and take over repetitive work, connected to WhatsApp, your CRM and internal tools.",
+        stack: ["LLMs", "AI agents", "RAG", "WhatsApp"],
+      },
+      {
+        title: "Backend and integrations",
+        body: "Go services, APIs and integrations between systems that need to talk reliably, from webhooks to data pipelines.",
+        stack: ["Go", "REST", "gRPC", "Kafka"],
+      },
+      {
+        title: "Architecture and cloud",
+        body: "Architecture reviews, performance and cost tuning, and cloud infrastructure on AWS, GCP and Kubernetes.",
+        stack: ["AWS", "GCP", "Kubernetes", "Postgres"],
+      },
+    ],
+    process: {
+      title: "How it works",
+      steps: [
+        { title: "Diagnose", body: "A short conversation to understand the problem, the systems involved and what success looks like." },
+        { title: "Build together", body: "I work alongside your team in short cycles, with working software in front of you early and often." },
+        { title: "Hand over", body: "Documentation, monitoring and knowledge transfer, so your team runs it without depending on me." },
+      ],
+    },
+    cta: "Talk about a project",
+    note: "Remote, on-site in Florianópolis or hybrid. In English, Portuguese or Spanish.",
   },
   experience: {
     title: "Experience",
@@ -95,7 +139,7 @@ const en = {
   },
   contact: {
     title: "Let's talk",
-    body: "Have a project, a role or a question about Go? The best way to reach me is LinkedIn.",
+    body: "Have a project, a consulting engagement, a role or a question about Go? The best way to reach me is LinkedIn.",
     cta: "Message me on LinkedIn",
     elsewhere: "Profiles",
   },
@@ -118,12 +162,13 @@ const pt: Dictionary = {
   meta: {
     title: "Renan Bastos · Engenheiro de software",
     description:
-      "Renan Bastos constrói sistemas backend, APIs e agentes de IA com Go. Mais de 10 anos de experiência, contribuições open source e artigos.",
+      "Renan Bastos constrói sistemas backend, APIs e agentes de IA com Go, e oferece consultoria e forward deployed engineering (FDE). Mais de 12 anos de experiência, contribuições open source e artigos.",
   },
   skipLink: "Pular para o conteúdo",
   nav: {
     label: "Seções",
     about: "Sobre",
+    services: "Serviços",
     experience: "Experiência",
     projects: "Projetos",
     openSource: "Open source",
@@ -135,9 +180,9 @@ const pt: Dictionary = {
     names: { en: "English", pt: "Português", es: "Español" },
   },
   hero: {
-    eyebrow: "Engenheiro de software · Florianópolis, Brasil",
+    eyebrow: "Engenheiro de software e consultor · Florianópolis, Brasil",
     title: "Construo sistemas backend que continuam simples enquanto crescem.",
-    lead: "Mais de 10 anos entregando software, de serviços em Go, APIs e integrações a agentes de IA, e contribuindo com as ferramentas open source que uso todo dia.",
+    lead: "Mais de 12 anos entregando software, de serviços em Go, APIs e integrações a agentes de IA. Pela minha consultoria também atuo dentro das empresas como forward deployed engineer, levando IA e integrações para produção.",
     ctaPrimary: "Falar comigo no LinkedIn",
     ctaSecondary: "Ver meu trabalho",
   },
@@ -155,6 +200,49 @@ const pt: Dictionary = {
       "Gosto de trabalhar perto de produto e de negócio, transformando problemas complexos em software simples e confiável. Hoje passo a maior parte do tempo com agentes de IA e com os produtos que estou construindo por conta própria.",
     ],
     outside: "Longe do teclado: surfe, bike, trilha e videogame.",
+  },
+  services: {
+    title: "Serviços",
+    intro:
+      "Consultoria pela Renan Bastos Desenvolvimento, minha empresa desde 2020. Trabalho com a mão no código, junto com o seu time, não só dando conselhos.",
+    featured: {
+      badge: "Forward Deployed Engineering · FDE",
+      title: "Um engenheiro dentro da sua operação",
+      body: "Entro no seu time, entendo como o negócio funciona de verdade e entrego IA e integrações no seu ambiente real, com os seus dados e os seus sistemas, até estarem em produção e em uso.",
+      points: [
+        "Imersão com as pessoas que tocam o processo no dia a dia",
+        "Agentes de IA e automações em cima dos seus dados e ferramentas",
+        "Integrações com seu CRM, ERP, WhatsApp e APIs internas",
+        "Colocação em produção, monitoramento e passagem para o seu time",
+      ],
+    },
+    offers: [
+      {
+        title: "Agentes de IA e automação",
+        body: "Agentes que qualificam leads, atendem clientes e assumem o trabalho repetitivo, conectados ao WhatsApp, ao seu CRM e às ferramentas internas.",
+        stack: ["LLMs", "AI agents", "RAG", "WhatsApp"],
+      },
+      {
+        title: "Backend e integrações",
+        body: "Serviços em Go, APIs e integrações entre sistemas que precisam conversar de forma confiável, de webhooks a pipelines de dados.",
+        stack: ["Go", "REST", "gRPC", "Kafka"],
+      },
+      {
+        title: "Arquitetura e nuvem",
+        body: "Revisão de arquitetura, ajuste de performance e de custo, e infraestrutura em nuvem na AWS, no GCP e em Kubernetes.",
+        stack: ["AWS", "GCP", "Kubernetes", "Postgres"],
+      },
+    ],
+    process: {
+      title: "Como funciona",
+      steps: [
+        { title: "Diagnóstico", body: "Uma conversa curta para entender o problema, os sistemas envolvidos e o que é sucesso para você." },
+        { title: "Construção junto", body: "Trabalho lado a lado com o seu time em ciclos curtos, com software funcionando na sua frente desde cedo." },
+        { title: "Passagem", body: "Documentação, monitoramento e transferência de conhecimento, para o seu time seguir sem depender de mim." },
+      ],
+    },
+    cta: "Conversar sobre um projeto",
+    note: "Remoto, presencial em Florianópolis ou híbrido. Em português, inglês ou espanhol.",
   },
   experience: {
     title: "Experiência",
@@ -196,7 +284,7 @@ const pt: Dictionary = {
   },
   contact: {
     title: "Vamos conversar",
-    body: "Tem um projeto, uma vaga ou uma dúvida sobre Go? O melhor jeito de falar comigo é pelo LinkedIn.",
+    body: "Tem um projeto, uma consultoria, uma vaga ou uma dúvida sobre Go? O melhor jeito de falar comigo é pelo LinkedIn.",
     cta: "Falar comigo no LinkedIn",
     elsewhere: "Perfis",
   },
@@ -217,12 +305,13 @@ const es: Dictionary = {
   meta: {
     title: "Renan Bastos · Ingeniero de software",
     description:
-      "Renan Bastos construye sistemas backend, APIs y agentes de IA con Go. Más de 10 años de experiencia, contribuciones open source y artículos.",
+      "Renan Bastos construye sistemas backend, APIs y agentes de IA con Go, y ofrece consultoría y forward deployed engineering (FDE). Más de 12 años de experiencia, contribuciones open source y artículos.",
   },
   skipLink: "Saltar al contenido",
   nav: {
     label: "Secciones",
     about: "Sobre mí",
+    services: "Servicios",
     experience: "Experiencia",
     projects: "Proyectos",
     openSource: "Open source",
@@ -234,9 +323,9 @@ const es: Dictionary = {
     names: { en: "English", pt: "Português", es: "Español" },
   },
   hero: {
-    eyebrow: "Ingeniero de software · Florianópolis, Brasil",
+    eyebrow: "Ingeniero de software y consultor · Florianópolis, Brasil",
     title: "Construyo sistemas backend que siguen siendo simples mientras crecen.",
-    lead: "Más de 10 años creando software, de servicios en Go, APIs e integraciones a agentes de IA, y contribuyendo a las herramientas open source que uso todos los días.",
+    lead: "Más de 12 años creando software, de servicios en Go, APIs e integraciones a agentes de IA. Con mi consultora también trabajo dentro de las empresas como forward deployed engineer, llevando IA e integraciones a producción.",
     ctaPrimary: "Escríbeme en LinkedIn",
     ctaSecondary: "Ver mi trabajo",
   },
@@ -254,6 +343,49 @@ const es: Dictionary = {
       "Me gusta trabajar cerca del producto y del negocio, convirtiendo problemas complejos en software simple y confiable. Hoy paso la mayor parte del tiempo con agentes de IA y con los productos que construyo por mi cuenta.",
     ],
     outside: "Lejos del teclado: surf, bici, senderismo y videojuegos.",
+  },
+  services: {
+    title: "Servicios",
+    intro:
+      "Consultoría a través de Renan Bastos Desenvolvimento, mi empresa desde 2020. Trabajo con las manos en el código, junto a tu equipo, no solo dando consejos.",
+    featured: {
+      badge: "Forward Deployed Engineering · FDE",
+      title: "Un ingeniero dentro de tu operación",
+      body: "Me sumo a tu equipo, entiendo cómo funciona realmente el negocio y entrego IA e integraciones en tu entorno real, con tus datos y tus sistemas, hasta que estén en producción y en uso.",
+      points: [
+        "Inmersión con las personas que llevan el proceso día a día",
+        "Agentes de IA y automatizaciones sobre tus datos y herramientas",
+        "Integraciones con tu CRM, ERP, WhatsApp y APIs internas",
+        "Puesta en producción, monitoreo y traspaso a tu equipo",
+      ],
+    },
+    offers: [
+      {
+        title: "Agentes de IA y automatización",
+        body: "Agentes que califican leads, atienden clientes y asumen el trabajo repetitivo, conectados a WhatsApp, a tu CRM y a las herramientas internas.",
+        stack: ["LLMs", "AI agents", "RAG", "WhatsApp"],
+      },
+      {
+        title: "Backend e integraciones",
+        body: "Servicios en Go, APIs e integraciones entre sistemas que necesitan comunicarse de forma confiable, de webhooks a pipelines de datos.",
+        stack: ["Go", "REST", "gRPC", "Kafka"],
+      },
+      {
+        title: "Arquitectura y nube",
+        body: "Revisión de arquitectura, ajuste de rendimiento y de costos, e infraestructura en la nube en AWS, GCP y Kubernetes.",
+        stack: ["AWS", "GCP", "Kubernetes", "Postgres"],
+      },
+    ],
+    process: {
+      title: "Cómo funciona",
+      steps: [
+        { title: "Diagnóstico", body: "Una conversación corta para entender el problema, los sistemas involucrados y qué significa el éxito para ti." },
+        { title: "Construcción conjunta", body: "Trabajo junto a tu equipo en ciclos cortos, con software funcionando frente a ti desde el principio." },
+        { title: "Traspaso", body: "Documentación, monitoreo y transferencia de conocimiento, para que tu equipo siga sin depender de mí." },
+      ],
+    },
+    cta: "Hablar de un proyecto",
+    note: "Remoto, presencial en Florianópolis o híbrido. En español, inglés o portugués.",
   },
   experience: {
     title: "Experiencia",
@@ -295,7 +427,7 @@ const es: Dictionary = {
   },
   contact: {
     title: "Hablemos",
-    body: "¿Tienes un proyecto, una vacante o una duda sobre Go? La mejor forma de contactarme es por LinkedIn.",
+    body: "¿Tienes un proyecto, una consultoría, una vacante o una duda sobre Go? La mejor forma de contactarme es por LinkedIn.",
     cta: "Escríbeme en LinkedIn",
     elsewhere: "Perfiles",
   },

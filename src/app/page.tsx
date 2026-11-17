@@ -7,6 +7,7 @@ import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { OpenSource } from "@/components/OpenSource";
 import { Projects } from "@/components/Projects";
+import { Services } from "@/components/Services";
 import { SkipLink } from "@/components/SkipLink";
 import { Writing } from "@/components/Writing";
 
@@ -20,6 +21,7 @@ export default function Home() {
         <span id="top" />
         <Hero />
         <About />
+        <Services />
         <Experience />
         <Projects />
         <OpenSource />

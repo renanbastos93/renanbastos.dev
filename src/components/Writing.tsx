@@ -20,7 +20,7 @@ export function Writing() {
   ];
 
   return (
-    <Section id="writing" index="05" title={t.writing.title} intro={t.writing.intro}>
+    <Section id="writing" index="06" title={t.writing.title} intro={t.writing.intro}>
       <div className="flex flex-wrap items-center justify-between gap-4">
         <div role="group" aria-label={t.writing.filterLabel} className="flex flex-wrap gap-2">
           {filters.map((option) => (

@@ -9,7 +9,7 @@ import { Tags } from "./Tags";
 export function Projects() {
   const { t, l } = useLocale();
   return (
-    <Section id="projects" index="03" title={t.projects.title} intro={t.projects.intro}>
+    <Section id="projects" index="04" title={t.projects.title} intro={t.projects.intro}>
       <ul className="grid gap-4 sm:grid-cols-2">
         {projects.map((project) => (
           <li
