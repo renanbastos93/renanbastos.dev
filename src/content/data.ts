@@ -74,13 +74,18 @@ export const experience: Job[] = [
   {
     company: "Renan Bastos Desenvolvimento",
     location: "Florianópolis, SC",
-    roles: [{ title: same("Co-Founder"), start: "2020-09" }],
+    roles: [
+      {
+        title: { en: "Founder & Consultant", pt: "Fundador e consultor", es: "Fundador y consultor" },
+        start: "2020-09",
+      },
+    ],
     summary: {
-      en: "Software consulting: building software for clients and managing their cloud servers on AWS, GCP and DigitalOcean.",
-      pt: "Consultoria de software: projetos complexos para empresas clientes e servidores em nuvem gerenciados na AWS, GCP e DigitalOcean.",
-      es: "Consultoría de software: proyectos complejos para empresas clientes y servidores en la nube gestionados en AWS, GCP y DigitalOcean.",
+      en: "Software consulting and forward deployed engineering: working inside client teams to take AI agents, automations and integrations from prototype to production, plus Go backends, architecture reviews and cloud infrastructure on AWS, GCP and DigitalOcean.",
+      pt: "Consultoria de software e forward deployed engineering: trabalho dentro dos times dos clientes para levar agentes de IA, automações e integrações do protótipo à produção, além de backend em Go, revisão de arquitetura e infraestrutura em nuvem na AWS, GCP e DigitalOcean.",
+      es: "Consultoría de software y forward deployed engineering: trabajo dentro de los equipos de los clientes para llevar agentes de IA, automatizaciones e integraciones del prototipo a producción, además de backend en Go, revisión de arquitectura e infraestructura en la nube en AWS, GCP y DigitalOcean.",
     },
-    stack: ["AWS", "GCP", "DigitalOcean"],
+    stack: ["AI agents", "Go", "AWS", "GCP", "DigitalOcean"],
   },
   {
     company: "Azion Technologies",
