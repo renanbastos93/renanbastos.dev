@@ -124,7 +124,19 @@ const en = {
   homelab: {
     title: "Homelab",
     intro:
-      "A Proxmox lab I run entirely as code. It's where I test the infrastructure, security and delivery practices I take to clients, and where the Arandu apps run today.",
+      "My homelab, built entirely as code for a dedicated GMKtec K8 Plus running Proxmox VE. It's where I test the infrastructure, security and delivery practices I take to clients.",
+    stages: [
+      {
+        label: "Target",
+        title: "GMKtec K8 Plus with Proxmox VE",
+        body: "The whole architecture is already declared in code for the dedicated hardware: shared services, data, the app platform, a lab network and an isolated security network. It goes live one workload at a time, following a written migration plan.",
+      },
+      {
+        label: "Proof of concept · running",
+        title: "Proxmox on Hyper-V",
+        body: "The same code runs today on Proxmox nested in Hyper-V. It validates the Terraform modules and Ansible roles before the hardware arrives, and already hosts the Arandu apps.",
+      },
+    ],
     pillars: [
       {
         title: "Everything as code",
@@ -304,7 +316,19 @@ const pt: Dictionary = {
   homelab: {
     title: "Homelab",
     intro:
-      "Um laboratório Proxmox que mantenho inteiro como código. É onde testo as práticas de infraestrutura, segurança e entrega que levo para os clientes, e onde rodam hoje as aplicações da Arandu.",
+      "Meu homelab, construído inteiro como código para um GMKtec K8 Plus dedicado rodando Proxmox VE. É onde testo as práticas de infraestrutura, segurança e entrega que levo para os clientes.",
+    stages: [
+      {
+        label: "Destino",
+        title: "GMKtec K8 Plus com Proxmox VE",
+        body: "A arquitetura inteira já está declarada em código para o hardware dedicado: serviços compartilhados, dados, a plataforma das aplicações, uma rede de lab e uma rede de segurança isolada. Ela entra no ar um workload por vez, seguindo um plano de migração documentado.",
+      },
+      {
+        label: "Prova de conceito · no ar",
+        title: "Proxmox no Hyper-V",
+        body: "O mesmo código roda hoje num Proxmox aninhado no Hyper-V. Ele valida os módulos do Terraform e as roles do Ansible antes do hardware chegar, e já hospeda as aplicações da Arandu.",
+      },
+    ],
     pillars: [
       {
         title: "Tudo como código",
@@ -482,7 +506,19 @@ const es: Dictionary = {
   homelab: {
     title: "Homelab",
     intro:
-      "Un laboratorio Proxmox que mantengo entero como código. Es donde pruebo las prácticas de infraestructura, seguridad y entrega que llevo a los clientes, y donde hoy corren las aplicaciones de Arandu.",
+      "Mi homelab, construido entero como código para un GMKtec K8 Plus dedicado con Proxmox VE. Es donde pruebo las prácticas de infraestructura, seguridad y entrega que llevo a los clientes.",
+    stages: [
+      {
+        label: "Destino",
+        title: "GMKtec K8 Plus con Proxmox VE",
+        body: "Toda la arquitectura ya está declarada en código para el hardware dedicado: servicios compartidos, datos, la plataforma de las aplicaciones, una red de lab y una red de seguridad aislada. Entra en producción un workload a la vez, siguiendo un plan de migración documentado.",
+      },
+      {
+        label: "Prueba de concepto · en marcha",
+        title: "Proxmox en Hyper-V",
+        body: "El mismo código corre hoy en un Proxmox anidado en Hyper-V. Valida los módulos de Terraform y los roles de Ansible antes de que llegue el hardware, y ya aloja las aplicaciones de Arandu.",
+      },
+    ],
     pillars: [
       {
         title: "Todo como código",

@@ -6,6 +6,7 @@ import { Tags } from "./Tags";
 
 const stack = [
   "Proxmox VE",
+  "GMKtec K8 Plus",
   "Terraform",
   "Ansible",
   "GitHub Actions",
@@ -20,11 +21,24 @@ const stack = [
 
 export function Homelab() {
   const { t } = useLocale();
-  const { pillars, pipeline } = t.homelab;
+  const { stages, pillars, pipeline } = t.homelab;
 
   return (
     <Section id="homelab" index="05" title={t.homelab.title} intro={t.homelab.intro}>
-      <ul className="grid gap-4 sm:grid-cols-2">
+      <ol className="grid gap-4 md:grid-cols-2">
+        {stages.map((stage, i) => (
+          <li
+            key={stage.title}
+            className={`rounded-2xl border bg-surface p-6 ${i === 0 ? "border-accent" : "border-line"}`}
+          >
+            <p className="font-mono text-xs text-accent">{stage.label}</p>
+            <h3 className="mt-3 font-display text-xl font-semibold">{stage.title}</h3>
+            <p className="mt-2 leading-relaxed text-muted">{stage.body}</p>
+          </li>
+        ))}
+      </ol>
+
+      <ul className="mt-4 grid gap-4 sm:grid-cols-2">
         {pillars.map((pillar) => (
           <li key={pillar.title} className="rounded-2xl border border-line bg-surface p-6">
             <h3 className="font-display text-xl font-semibold">{pillar.title}</h3>
