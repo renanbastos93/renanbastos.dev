@@ -1,15 +1,15 @@
 "use client";
 
-import { articles, mergedPullRequests, profile, stats } from "@/content/data";
+import { mergedPullRequests, profile, stats } from "@/content/data";
 import { useLocale } from "@/i18n/LocaleProvider";
 import { ExternalLink } from "./ExternalLink";
 
-export function Hero() {
+export function Hero({ articleCount }: { articleCount: number }) {
   const { t, l } = useLocale();
   const figures = [
     { value: stats.years, label: t.stats.years },
     { value: l(stats.npmMonthlyDownloads), label: t.stats.downloads },
-    { value: String(articles.length), label: t.stats.articles },
+    { value: String(articleCount), label: t.stats.articles },
     { value: String(mergedPullRequests), label: t.stats.prs },
   ];
 

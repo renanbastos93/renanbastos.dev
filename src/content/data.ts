@@ -336,6 +336,10 @@ export const contributions: Contribution[] = [
 export type ArticleLang = "pt" | "en";
 export type Article = { title: string; href: string; date: string; lang: ArticleLang; source: "dev.to" | "Medium" };
 
+/**
+ * Medium posts, plus a snapshot of the dev.to posts. New dev.to posts show up on their own
+ * (see articles.ts); this list is the fallback when the dev.to API is unreachable.
+ */
 export const articles: Article[] = [
   { title: "The Rise of Solution Architects in the Age of Artificial Intelligence", href: "https://dev.to/renanbastos93/the-rise-of-solution-architects-in-the-age-of-artificial-intelligence-824", date: "2026-04-24", lang: "en", source: "dev.to" },
   { title: "Seu app Go no K8s está usando até 20x mais CPU do que deveria (e como corrigir do jeito certo)", href: "https://dev.to/renanbastos93/seu-app-go-no-k8s-esta-usando-ate-20x-mais-cpu-do-que-deveria-e-como-corrigir-do-jeito-certo-3g15", date: "2026-02-27", lang: "pt", source: "dev.to" },

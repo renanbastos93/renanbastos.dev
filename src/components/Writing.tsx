@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { type ArticleLang, articles } from "@/content/data";
+import type { Article, ArticleLang } from "@/content/data";
 import { htmlLang } from "@/i18n/dictionaries";
 import { formatDate, useLocale } from "@/i18n/LocaleProvider";
 import { ExternalLink } from "./ExternalLink";
@@ -9,7 +9,7 @@ import { Section } from "./Section";
 
 type Filter = "all" | ArticleLang;
 
-export function Writing() {
+export function Writing({ articles }: { articles: Article[] }) {
   const { t, locale } = useLocale();
   const [filter, setFilter] = useState<Filter>("all");
   const visible = filter === "all" ? articles : articles.filter((article) => article.lang === filter);

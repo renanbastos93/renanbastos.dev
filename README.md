@@ -16,6 +16,7 @@ npm run build && npm start
 ## Content
 
 - `src/content/data.ts`: experience, projects, open source PRs and articles
+- `src/content/articles.ts`: loads dev.to posts from the dev.to API and refreshes them once a day, so new posts appear without a deploy. Medium posts are added by hand in `data.ts`.
 - `src/i18n/dictionaries.ts`: interface copy in `en`, `pt` and `es`
 
 ## Deploy (Dokploy)

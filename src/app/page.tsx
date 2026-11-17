@@ -10,8 +10,13 @@ import { Projects } from "@/components/Projects";
 import { Services } from "@/components/Services";
 import { SkipLink } from "@/components/SkipLink";
 import { Writing } from "@/components/Writing";
+import { getArticles } from "@/content/articles";
 
-export default function Home() {
+// Refresh the dev.to article list once a day (keep in sync with ARTICLES_REVALIDATE).
+export const revalidate = 86400;
+
+export default async function Home() {
+  const articles = await getArticles();
   return (
     <>
       <DocumentTitle page="home" />
@@ -19,13 +24,13 @@ export default function Home() {
       <Header />
       <main id="main" tabIndex={-1} className="mx-auto max-w-6xl px-4 outline-none sm:px-6">
         <span id="top" />
-        <Hero />
+        <Hero articleCount={articles.length} />
         <About />
         <Services />
         <Experience />
         <Projects />
         <OpenSource />
-        <Writing />
+        <Writing articles={articles} />
         <Contact />
       </main>
       <Footer />
