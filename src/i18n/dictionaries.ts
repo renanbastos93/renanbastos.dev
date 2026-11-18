@@ -26,6 +26,7 @@ const en = {
     services: "Services",
     experience: "Experience",
     projects: "Projects",
+    homelab: "Homelab",
     openSource: "Open source",
     writing: "Writing",
     contact: "Contact",
@@ -120,6 +121,51 @@ const en = {
     visit: "Visit",
     source: "Source code",
   },
+  homelab: {
+    title: "Homelab",
+    intro:
+      "My homelab, built entirely as code for a dedicated GMKtec K8 Plus running Proxmox VE. It's where I test the infrastructure, security and delivery practices I take to clients.",
+    stages: [
+      {
+        label: "Target",
+        title: "GMKtec K8 Plus with Proxmox VE",
+        body: "The whole architecture is already declared in code for the dedicated hardware: shared services, data, the app platform, a lab network and an isolated security network. It goes live one workload at a time, following a written migration plan.",
+      },
+      {
+        label: "Proof of concept · running",
+        title: "Proxmox on Hyper-V",
+        body: "The same code runs today on Proxmox nested in Hyper-V. It validates the Terraform modules and Ansible roles before the hardware arrives, and already hosts the Arandu apps.",
+      },
+    ],
+    pillars: [
+      {
+        title: "Everything as code",
+        body: "Terraform creates every container and VM; Ansible configures them with 17 roles, each one tested in a container in CI. Nothing is set up by hand.",
+      },
+      {
+        title: "Private by default",
+        body: "Networks split by purpose, including an isolated security network with no internet access. Unprivileged containers, and access only through a private Tailscale network: nothing is published to the internet.",
+      },
+      {
+        title: "Security in the pipeline",
+        body: "Least-privilege API tokens per environment, secret scanning on every change, SSH hardening and automatic security updates, Vault for secrets, ACLs on Redis and SCRAM on PostgreSQL.",
+      },
+      {
+        title: "Observable and recoverable",
+        body: "Prometheus and Grafana with metrics from every host and container, an append-only backup server and a written disaster recovery plan.",
+      },
+    ],
+    pipeline: {
+      title: "How a change reaches the server",
+      steps: [
+        { title: "Pull request", body: "CI runs formatting, validation, linting, secret scanning and the tests of every role." },
+        { title: "Saved plan", body: "Terraform writes a plan that I read before anything changes." },
+        { title: "Guarded apply", body: "A guard refuses any delete or replace without explicit approval. No automation ever applies." },
+        { title: "Configuration", body: "Ansible brings each machine to the declared state, idempotently." },
+      ],
+    },
+    note: "The repository is private. I'm happy to walk through it in a conversation.",
+  },
   openSource: {
     title: "Open source",
     intro:
@@ -172,6 +218,7 @@ const pt: Dictionary = {
     services: "Serviços",
     experience: "Experiência",
     projects: "Projetos",
+    homelab: "Homelab",
     openSource: "Open source",
     writing: "Artigos",
     contact: "Contato",
@@ -266,6 +313,51 @@ const pt: Dictionary = {
     visit: "Acessar",
     source: "Código-fonte",
   },
+  homelab: {
+    title: "Homelab",
+    intro:
+      "Meu homelab, construído inteiro como código para um GMKtec K8 Plus dedicado rodando Proxmox VE. É onde testo as práticas de infraestrutura, segurança e entrega que levo para os clientes.",
+    stages: [
+      {
+        label: "Destino",
+        title: "GMKtec K8 Plus com Proxmox VE",
+        body: "A arquitetura inteira já está declarada em código para o hardware dedicado: serviços compartilhados, dados, a plataforma das aplicações, uma rede de lab e uma rede de segurança isolada. Ela entra no ar um workload por vez, seguindo um plano de migração documentado.",
+      },
+      {
+        label: "Prova de conceito · no ar",
+        title: "Proxmox no Hyper-V",
+        body: "O mesmo código roda hoje num Proxmox aninhado no Hyper-V. Ele valida os módulos do Terraform e as roles do Ansible antes do hardware chegar, e já hospeda as aplicações da Arandu.",
+      },
+    ],
+    pillars: [
+      {
+        title: "Tudo como código",
+        body: "O Terraform cria cada container e VM; o Ansible configura tudo com 17 roles, cada uma testada em container na CI. Nada é configurado à mão.",
+      },
+      {
+        title: "Privado por padrão",
+        body: "Redes separadas por finalidade, incluindo uma rede de segurança isolada, sem acesso à internet. Containers não privilegiados e acesso só por uma rede privada Tailscale: nada é publicado na internet.",
+      },
+      {
+        title: "Segurança no pipeline",
+        body: "Tokens de API com privilégio mínimo por ambiente, varredura de segredos em toda mudança, SSH endurecido e atualizações de segurança automáticas, Vault para segredos, ACL no Redis e SCRAM no PostgreSQL.",
+      },
+      {
+        title: "Observável e recuperável",
+        body: "Prometheus e Grafana com métricas de cada host e container, um servidor de backup append-only e um plano de recuperação de desastre documentado.",
+      },
+    ],
+    pipeline: {
+      title: "Como uma mudança chega ao servidor",
+      steps: [
+        { title: "Pull request", body: "A CI roda formatação, validação, lint, varredura de segredos e os testes de cada role." },
+        { title: "Plano salvo", body: "O Terraform gera um plano que eu leio antes de qualquer mudança." },
+        { title: "Apply protegido", body: "Uma trava recusa qualquer remoção ou recriação sem aprovação explícita. Nenhuma automação aplica nada." },
+        { title: "Configuração", body: "O Ansible leva cada máquina ao estado declarado, de forma idempotente." },
+      ],
+    },
+    note: "O repositório é privado. Posso mostrar como ele funciona numa conversa.",
+  },
   openSource: {
     title: "Open source",
     intro:
@@ -316,6 +408,7 @@ const es: Dictionary = {
     services: "Servicios",
     experience: "Experiencia",
     projects: "Proyectos",
+    homelab: "Homelab",
     openSource: "Open source",
     writing: "Artículos",
     contact: "Contacto",
@@ -409,6 +502,51 @@ const es: Dictionary = {
     status: { live: "En línea", archived: "Archivado" },
     visit: "Visitar",
     source: "Código fuente",
+  },
+  homelab: {
+    title: "Homelab",
+    intro:
+      "Mi homelab, construido entero como código para un GMKtec K8 Plus dedicado con Proxmox VE. Es donde pruebo las prácticas de infraestructura, seguridad y entrega que llevo a los clientes.",
+    stages: [
+      {
+        label: "Destino",
+        title: "GMKtec K8 Plus con Proxmox VE",
+        body: "Toda la arquitectura ya está declarada en código para el hardware dedicado: servicios compartidos, datos, la plataforma de las aplicaciones, una red de lab y una red de seguridad aislada. Entra en producción un workload a la vez, siguiendo un plan de migración documentado.",
+      },
+      {
+        label: "Prueba de concepto · en marcha",
+        title: "Proxmox en Hyper-V",
+        body: "El mismo código corre hoy en un Proxmox anidado en Hyper-V. Valida los módulos de Terraform y los roles de Ansible antes de que llegue el hardware, y ya aloja las aplicaciones de Arandu.",
+      },
+    ],
+    pillars: [
+      {
+        title: "Todo como código",
+        body: "Terraform crea cada contenedor y VM; Ansible los configura con 17 roles, cada uno probado en un contenedor en la CI. Nada se configura a mano.",
+      },
+      {
+        title: "Privado por defecto",
+        body: "Redes separadas por propósito, incluida una red de seguridad aislada, sin acceso a internet. Contenedores sin privilegios y acceso solo por una red privada Tailscale: nada se publica en internet.",
+      },
+      {
+        title: "Seguridad en el pipeline",
+        body: "Tokens de API con privilegio mínimo por entorno, escaneo de secretos en cada cambio, SSH endurecido y actualizaciones de seguridad automáticas, Vault para secretos, ACL en Redis y SCRAM en PostgreSQL.",
+      },
+      {
+        title: "Observable y recuperable",
+        body: "Prometheus y Grafana con métricas de cada host y contenedor, un servidor de backup append-only y un plan de recuperación ante desastres documentado.",
+      },
+    ],
+    pipeline: {
+      title: "Cómo un cambio llega al servidor",
+      steps: [
+        { title: "Pull request", body: "La CI ejecuta formato, validación, lint, escaneo de secretos y las pruebas de cada rol." },
+        { title: "Plan guardado", body: "Terraform genera un plan que leo antes de cualquier cambio." },
+        { title: "Apply protegido", body: "Un bloqueo rechaza cualquier borrado o reemplazo sin aprobación explícita. Ninguna automatización aplica nada." },
+        { title: "Configuración", body: "Ansible lleva cada máquina al estado declarado, de forma idempotente." },
+      ],
+    },
+    note: "El repositorio es privado. Con gusto te lo muestro en una conversación.",
   },
   openSource: {
     title: "Open source",

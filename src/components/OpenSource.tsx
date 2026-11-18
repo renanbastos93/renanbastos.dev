@@ -8,7 +8,7 @@ import { Section } from "./Section";
 export function OpenSource() {
   const { t, locale } = useLocale();
   return (
-    <Section id="open-source" index="05" title={t.openSource.title} intro={t.openSource.intro}>
+    <Section id="open-source" index="06" title={t.openSource.title} intro={t.openSource.intro}>
       <div className="space-y-10">
         {contributions.map((contribution) => (
           <div key={contribution.repo}>

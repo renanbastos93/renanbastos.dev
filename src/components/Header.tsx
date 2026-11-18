@@ -3,7 +3,7 @@
 import { useLocale } from "@/i18n/LocaleProvider";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 
-export const sectionIds = ["about", "services", "experience", "projects", "open-source", "writing", "contact"] as const;
+export const sectionIds = ["about", "services", "experience", "projects", "homelab", "open-source", "writing", "contact"] as const;
 
 export function Header() {
   const { t } = useLocale();
@@ -12,6 +12,7 @@ export function Header() {
     services: t.nav.services,
     experience: t.nav.experience,
     projects: t.nav.projects,
+    homelab: t.nav.homelab,
     "open-source": t.nav.openSource,
     writing: t.nav.writing,
     contact: t.nav.contact,

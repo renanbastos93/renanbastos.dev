@@ -4,6 +4,7 @@ import { DocumentTitle } from "@/components/DocumentTitle";
 import { Experience } from "@/components/Experience";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
+import { Homelab } from "@/components/Homelab";
 import { Hero } from "@/components/Hero";
 import { OpenSource } from "@/components/OpenSource";
 import { Projects } from "@/components/Projects";
@@ -29,6 +30,7 @@ export default async function Home() {
         <Services />
         <Experience />
         <Projects />
+        <Homelab />
         <OpenSource />
         <Writing articles={articles} />
         <Contact />
